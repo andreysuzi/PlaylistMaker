@@ -13,7 +13,7 @@ class SettingsActivity: AppCompatActivity() {
         val backButton = findViewById<ImageView>(R.id.arrow_back)
 
         backButton.setOnClickListener{
-            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 }
