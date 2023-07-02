@@ -7,7 +7,7 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
-class SettingsActivity: AppCompatActivity() {
+class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
@@ -17,11 +17,11 @@ class SettingsActivity: AppCompatActivity() {
         val supportButton = findViewById<FrameLayout>(R.id.support_button)
         val agreementButton = findViewById<FrameLayout>(R.id.agreement_button)
 
-        backButton.setOnClickListener{
+        backButton.setOnClickListener {
             finish()
         }
 
-        shareButton.setOnClickListener{
+        shareButton.setOnClickListener {
             val message = getString(R.string.share_link)
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
@@ -29,7 +29,7 @@ class SettingsActivity: AppCompatActivity() {
             startActivity(shareIntent)
         }
 
-        supportButton.setOnClickListener{
+        supportButton.setOnClickListener {
             val subject = getString(R.string.support_subject)
             val message = getString(R.string.support_message)
             val supportIntent = Intent(Intent.ACTION_SENDTO)
@@ -40,7 +40,7 @@ class SettingsActivity: AppCompatActivity() {
             startActivity(supportIntent)
         }
 
-        agreementButton.setOnClickListener{
+        agreementButton.setOnClickListener {
             val url = getString(R.string.agreement_link)
             val shareIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(shareIntent)
