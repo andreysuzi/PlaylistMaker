@@ -30,14 +30,16 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         supportButton.setOnClickListener {
-            val subject = getString(R.string.support_subject)
-            val message = getString(R.string.support_message)
-            val supportIntent = Intent(Intent.ACTION_SENDTO)
-            supportIntent.data = Uri.parse("mailto:")
-            supportIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.support_mail)))
-            supportIntent.putExtra(Intent.EXTRA_SUBJECT, subject)
-            supportIntent.putExtra(Intent.EXTRA_TEXT, message)
-            startActivity(supportIntent)
+            Intent(Intent.ACTION_SENDTO).apply{
+                val subject = getString(R.string.support_subject)
+                val message = getString(R.string.support_message)
+                data = Uri.parse("mailto:")
+                putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.support_mail)))
+                putExtra(Intent.EXTRA_SUBJECT, subject)
+                putExtra(Intent.EXTRA_TEXT, message)
+                startActivity(this)
+            }
+
         }
 
         agreementButton.setOnClickListener {
