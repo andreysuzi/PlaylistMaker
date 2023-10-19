@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/search_bg"
+        android:layout_marginBottom="@dimen/list_margin"
         android:radius="20dp">
 
 
@@ -48,7 +49,7 @@
             android:layout_weight="1"
             android:inputType="text"
             android:maxLines="1"
-            android:textSize="@dimen/search_text"
+            android:textSize="@dimen/main_text"
             android:hint="@string/search"
             android:background="@color/search"
             android:textColor="@color/dark_grey"
@@ -64,4 +65,11 @@
             android:visibility="gone" />
 
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
 </LinearLayout>

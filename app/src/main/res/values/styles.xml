@@ -64,4 +64,18 @@
         <item name="android:layout_marginTop">@dimen/margin_arrow_back</item>
         <item name="android:src">@drawable/arrow_back</item>
     </style>
+
+    <style name="TrackTitle">
+        <item name="android:textSize">@dimen/main_text</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TrackSubtitle">
+        <item name="android:textSize">@dimen/sub_text</item>
+        <item name="android:textColor">@color/sub_text</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
 </resources>

@@ -2,14 +2,18 @@
 <resources>
     <dimen name="title">22sp</dimen>
     <dimen name="settings_line">19sp</dimen>
-    <dimen name="search_text">16sp</dimen>
+    <dimen name="main_text">16sp</dimen>
+    <dimen name="sub_text">13sp</dimen>
     <dimen name="zero">0dp</dimen>
     <dimen name="button_margin">8dp</dimen>
     <dimen name="icon_padding">10dp</dimen>
     <dimen name="top_padding">14dp</dimen>
     <dimen name="side_padding">16dp</dimen>
     <dimen name="side_padding_end">14dp</dimen>
+    <dimen name="list_margin">16dp</dimen>
+    <dimen name="track_padding">8dp</dimen>
     <dimen name="settings_padding">21dp</dimen>
+    <dimen name="time_padding">38dp</dimen>
     <dimen name="margin_arrow_back">8dp</dimen>
     <dimen name="margin_support_3_top">3dp</dimen>
     <dimen name="margin_support_3_horisontal">4dp</dimen>
@@ -29,4 +33,5 @@
     <dimen name="image_18">18dp</dimen>
     <dimen name="image_19">19dp</dimen>
     <dimen name="image_20">20dp</dimen>
+    <dimen name="track_image">45dp</dimen>
 </resources>
