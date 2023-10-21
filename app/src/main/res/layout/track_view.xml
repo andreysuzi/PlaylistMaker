@@ -11,7 +11,7 @@
         android:id="@+id/trackImage"
         android:layout_width="@dimen/track_image"
         android:layout_height="@dimen/track_image"
-        tools:src="@drawable/baseline_broken_image_24" />
+        tools:src="@drawable/placeholder" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -21,8 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingEnd="@dimen/side_padding_end"
-            android:paddingStart="@dimen/track_padding">
+            android:paddingStart="@dimen/track_padding"
+            android:paddingEnd="@dimen/side_padding_end">
 
             <TextView
                 android:id="@+id/trackNameField"
@@ -30,9 +30,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Sweet Child O'Mine | Sweet Child O'Mine | Sweet Child O'Mine | " />
-<FrameLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
 
                 <TextView
@@ -43,34 +44,35 @@
                     android:paddingEnd="@dimen/time_padding"
                     tools:text="Guns N' Roses" />
 
-    <LinearLayout
-    android:id="@+id/dot"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-        android:layout_gravity="end"
-    android:gravity="center_vertical"
-    android:orientation="horizontal">
-                <ImageView
+                <LinearLayout
+                    android:id="@+id/dot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/dot" />
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/trackTimeField"
-                    style="@style/TrackSubtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="5:03" />
-</LinearLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dot" />
 
-</FrameLayout>
+                    <TextView
+                        android:id="@+id/trackTimeField"
+                        style="@style/TrackSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="5:03" />
+                </LinearLayout>
+
+            </FrameLayout>
         </LinearLayout>
 
         <ImageView
             style="@style/SettingsButton"
             android:layout_width="@dimen/image_8"
             android:layout_height="@dimen/image_14"
-            android:layout_marginEnd="6dp"
+            android:layout_marginEnd="@dimen/margin_track_end"
             android:src="@drawable/arrow_forward" />
     </FrameLayout>
 </LinearLayout>

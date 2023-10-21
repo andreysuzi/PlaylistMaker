@@ -15,6 +15,6 @@ class TrackAdapter (private val tracks: List<Track>): RecyclerView.Adapter<Track
     }
 
     override fun onBindViewHolder(holder: TrackViewHolder, position: Int) {
-        holder bind(tracks.get(position))
+        holder.bind(tracks[position])
     }
 }

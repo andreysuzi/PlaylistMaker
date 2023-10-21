@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/search_bg"
         android:layout_marginBottom="@dimen/list_margin"
-        android:radius="20dp">
+        android:radius="@dimen/search_field_radius">
 
 
         <ImageView
