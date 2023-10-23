@@ -9,6 +9,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 
 
 class SearchActivity : AppCompatActivity() {
@@ -54,8 +55,12 @@ class SearchActivity : AppCompatActivity() {
             imm.hideSoftInputFromWindow(it.windowToken, 0)
             searchInput.setText("")
         }
-    }
 
+        val trackAdapter = TrackAdapter(Mock.mockList)
+
+        val trackList = findViewById<RecyclerView>(R.id.searchRecyclerView)
+        trackList.adapter = trackAdapter
+    }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)

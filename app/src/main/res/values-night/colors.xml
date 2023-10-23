@@ -14,4 +14,6 @@
     <color name="title">#FFFFFF</color>
     <color name="search">#FFFFFF</color>
     <color name="hint">#1A1B22</color>
+    <color name="text">#FFFFFF</color>
+    <color name="sub_text">#FFFFFF</color>
 </resources>
